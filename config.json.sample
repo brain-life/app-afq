@@ -1,5 +1,3 @@
 {
-  "dtiinit": "/mnt/scratch/testdata/dtiinit",
-  "track": "/mnt/scratch/testdata/track/track.tck",
-  "useinterhemisphericsplit": false
+  "dtiinit": "/N/u/hayashis/Karst/testdata/108323/dtiinit/."
 }
