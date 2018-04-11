@@ -1,0 +1,5 @@
+{
+  "dtiinit": "/mnt/scratch/testdata/dtiinit",
+  "track": "/mnt/scratch/testdata/track/track.tck",
+  "useinterhemisphericsplit": false
+}
