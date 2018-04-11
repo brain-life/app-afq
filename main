@@ -7,17 +7,17 @@ set -e
 
 echo "running AFQ"
 time singularity exec -e docker://brainlife/mcr:neurodebian1604-r2017a ./compiled/main
-if [ ! -s output.mat ];
+if [ ! -s afq.mat ];
 then
 	echo "output missing"
 	exit 1
 fi
 
-echo "running AFQ"
+echo "running afqbrowser-assemble"
 time singularity exec -e docker://brainlife/afq-browser:1.0 afqbrowser-assemble \
     --page-title "title" \
     --page-subtitle "subtitle" \
     --page-title-link "link title" \
     --page-subtitle-link "link subtitle" \
-    output.mat
+    afq.mat
 
