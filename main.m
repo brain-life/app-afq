@@ -22,13 +22,10 @@ end
 % load my own config.json
 config = loadjson('config.json');
 
+% run AFQ
 sub_dirs = { [config.dtiinit '/dti'] };
 sub_group = [0]; %0 = control 1 = patient
-%afq = AFQ_Create('run_mode', 'test', 'sub_dirs', sub_dirs, 'sub_group', sub_group, 'showfigs', 0);
 afq = AFQ_Create('sub_dirs', sub_dirs, 'sub_group', sub_group);
 [afq patient_data control_data norms abn abnTracts] = AFQ_run(sub_dirs, sub_group, afq);
-
 save('afq.mat', 'afq');
-disp('done');
 
-%[fg_classified,~,classification]= AFQ_SegmentFiberGroups(fullfile(config.dtiinit, 'dti/dt6.mat'), wbfg, [], [], config.useinterhemisphericsplit);
