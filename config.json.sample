@@ -1,3 +1,5 @@
 {
-  "dtiinit": "/mnt/scratch/testdata/dtiinit/."
+  "dtiinit": "/mnt/scratch/testdata/dtiinit/.",
+  "control": "/mnt/scratch/testdata/dtiinit/.",
+  "patient": "/mnt/scratch/testdata/dtiinit2/."
 }
